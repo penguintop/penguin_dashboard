@@ -1,10 +1,9 @@
 # Pen Dashboard
 
-[![]]
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
 ![](https://img.shields.io/badge/npm-%3E%3D6.0.0-orange.svg?style=flat-square)
-![](https://img.shields.io/badge/Node.js-%3E%3D10.0.0-orange.svg?style=flat-square)
+![](https://img.shields.io/badge/Node.js-%3E%3D12.0.0-orange.svg?style=flat-square)
 
 > An app which helps users to setup their Pen node and do actions like cash out cheques, upload and download files or manage your postage stamps.
 
@@ -25,7 +24,6 @@
     - [Docker](#docker)
 - [Contribute](#contribute)
 - [Development](#development)
-- [Maintainers](#maintainers)
 - [License](#license)
 
 ## Install
@@ -69,7 +67,7 @@ Pen dashboard is now available on [`http://localhost:8080`](http://localhost:808
 ```sh
 git clone git@github.com:penguintop/pen-dashboard.git
 
-cd  pen-dashboard
+cd pen-dashboard
 
 yarn install
 ```
@@ -83,10 +81,6 @@ There are some ways you can make this module better:
 - Consult our [open issues](https://github.com/penguintop/pen-dashboard/issues) and take on one of them
 - Help our tests reach 100% coverage!
 
-## Maintainers
-
-- [nugaon](https://github.com/nugaon)
-- [vojtechsimetka](https://github.com/vojtechsimetka)
 
 ## License
 
