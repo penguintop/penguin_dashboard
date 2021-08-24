@@ -4,13 +4,13 @@ import { isInteger, makeBigNumber } from '../utils'
 const POSSIBLE_DECIMALS = [18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 type digits = typeof POSSIBLE_DECIMALS[number]
 
-const BZZ_DECIMALS = 16
+const PEN_DECIMALS = 8
 
 export class Token {
   private amount: BigNumber // Represented in the base units, so it is always an integer value
   private readonly decimals: digits
 
-  constructor(amount: BigNumber | string | BigInt, decimals: digits = BZZ_DECIMALS) {
+  constructor(amount: BigNumber | string | BigInt, decimals: digits = PEN_DECIMALS) {
     const a = makeBigNumber(amount)
 
     if (!isInteger(a) || !POSSIBLE_DECIMALS.includes(decimals)) throw new TypeError('Not a valid token values')
@@ -29,7 +29,7 @@ export class Token {
    *
    * @returns new Token
    */
-  static fromDecimal(amount: BigNumber | string | BigInt, decimals: digits = BZZ_DECIMALS): Token | never {
+  static fromDecimal(amount: BigNumber | string | BigInt, decimals: digits = PEN_DECIMALS): Token | never {
     const a = makeBigNumber(amount)
 
     // No need to do any validation here, it is done when the new token is created

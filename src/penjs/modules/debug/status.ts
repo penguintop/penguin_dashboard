@@ -1,8 +1,8 @@
 import { safeAxios } from '../../utils/safe-axios'
 import type { Health } from '../../types/debug'
 import { engines } from '../../../../package.json'
-export const SUPPORTED_BEE_VERSION_EXACT = engines.bee
-export const SUPPORTED_BEE_VERSION = engines.bee.substr(0, engines.bee.indexOf('-'))
+export const SUPPORTED_BEE_VERSION_EXACT = engines.pen
+export const SUPPORTED_BEE_VERSION = engines.pen.substr(0, engines.pen.indexOf('-'))
 
 /**
  * Get health of node
