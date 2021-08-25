@@ -60,7 +60,7 @@ function BalancesTable({ accounting, isLoadingUncashed }: Props): ReactElement |
                 PEN
               </TableCell>
               <TableCell className={classes.values}>
-                -{sent.toFixedDecimal()} / {received.toFixedDecimal()} BZZ
+                -{sent.toFixedDecimal()} / {received.toFixedDecimal()} PEN
               </TableCell>
               <TableCell className={classes.values}>
                 <span
