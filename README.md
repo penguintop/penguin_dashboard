@@ -32,6 +32,40 @@ cd pen-dashboard
 yarn install
 ```
 
+## Deploy
+
+Add to nginx configure
+
+```
+location / {
+        # First attempt to serve request as file, then
+        # as directory, then fall back to displaying a 404.
+
+        try_files $uri $uri/ =404;
+}
+
+location /files {
+        try_files $uri / =200;
+}
+
+location /stamps {
+        try_files $uri / =200;
+}
+
+location /accounting {
+        try_files $uri / =200;
+}
+
+location /peers {
+        try_files $uri / =200;
+}
+
+location /settings {
+        try_files $uri / =200;
+}
+```
+
+
 ## Usage
 
 :warning: To successfully connect to the Pen node, you will need to enable the Debug API and CORS. You can do so by setting `cors-allowed-origins: ['*']` and `debug-api-enable: true` in the Pen config file and then restart the Pen node. To see where the config file is, consult the [official Pen documentation]
