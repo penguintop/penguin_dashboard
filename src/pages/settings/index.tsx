@@ -9,10 +9,12 @@ export default function Settings(): ReactElement {
   const handleNewHostConnection = () => {
     if (host) {
       sessionStorage.setItem('api_host', host)
+      localStorage.setItem('api_host', host)
     }
 
     if (debugHost) {
       sessionStorage.setItem('debug_api_host', debugHost)
+      localStorage.setItem('debug_api_host', debugHost)
     }
 
     if (host || debugHost) {
@@ -35,7 +37,7 @@ export default function Settings(): ReactElement {
             helperText="Enter node host override / port"
             fullWidth
             defaultValue={
-              sessionStorage.getItem('api_host') ? sessionStorage.getItem('api_host') : process.env.REACT_APP_BEE_HOST
+              localStorage.getItem('api_host') ? localStorage.getItem('api_host') : process.env.REACT_APP_BEE_HOST
             }
             margin="normal"
             InputLabelProps={{
@@ -56,8 +58,8 @@ export default function Settings(): ReactElement {
             helperText="Enter node debug host override / port"
             fullWidth
             defaultValue={
-              sessionStorage.getItem('debug_api_host')
-                ? sessionStorage.getItem('debug_api_host')
+              localStorage.getItem('debug_api_host')
+                ? localStorage.getItem('debug_api_host')
                 : process.env.REACT_APP_BEE_DEBUG_HOST
             }
             onChange={e => {
