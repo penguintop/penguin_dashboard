@@ -44,23 +44,23 @@ export default function VersionCheck({
     )
   }
 
-  // Old version or not connected to bee debug API
+  // Old version or not connected to pen debug API
   return (
     <>
       <span>
-        Your Bee version is out of date. Please update to the{' '}
+        Your Pen version is out of date. Please update to the{' '}
         <a href={latestUrl} rel="noreferrer" target="_blank">
           latest
         </a>{' '}
         before continuing. Rerun the installation script below to upgrade. Reference the docs for help with updating.{' '}
-        <a href="https://docs.ethswarm.org/docs/installation/manual#upgrading-bee" rel="noreferrer" target="_blank">
+        <a>
           Docs
         </a>
       </span>
       <CodeBlockTabs
         showLineNumbers
-        linux={`bee version\nwget https://github.com/penguintop/penguin/releases/download/${latestVersion}/bee_${latestVersion}_amd64.deb\nsudo dpkg -i bee_${latestVersion}_amd64.deb`}
-        mac={`bee version\nbrew tap ethersphere/tap\nbrew install swarm-bee\nbrew services start swarm-bee`}
+        linux={`pen version\nwget https://github.com/penguintop/penguin/releases/download/${latestVersion}/pen_${latestVersion}_amd64.deb\nsudo dpkg -i pen_${latestVersion}_amd64.deb`}
+        mac={``}
       />
       {version}
     </>

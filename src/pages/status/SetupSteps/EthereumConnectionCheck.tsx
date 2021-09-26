@@ -20,16 +20,16 @@ export default function EthereumConnectionCheck({ isLoading, isOk, nodeAddresses
 
   return (
     <p>
-      Your Bee node must have access to the xDai blockchain, so that it can interact and deploy your chequebook
+      Your Pen node must have access to the Xwc blockchain, so that it can interact and deploy your chequebook
       contract. You can run{' '}
-      <a href="https://www.xdaichain.com/" rel="noreferrer" target="_blank">
-        your own xDai node
+      <a>
+        your own Xwc node
       </a>
       , or use a provider instead - we recommend{' '}
-      <a href="https://getblock.io/" rel="noreferrer" target="_blank">
+      <a>
         Getblock
       </a>
-      . By default, Bee expects a local node at http://localhost:8545. To use a provider instead, simply change the{' '}
+      . To use a provider instead, simply change the{' '}
       <strong>swap-endpoint</strong> in your configuration file.
     </p>
   )

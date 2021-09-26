@@ -27,16 +27,16 @@ export default function TroubleshootConnectionCard(): ReactElement {
         <div style={{ marginBottom: '20px', textAlign: 'center' }}>
           <strong>
             <Link to="/">Click to run status checks</Link> on your nodes connection or check out the{' '}
-            <a href={process.env.REACT_APP_BEE_DOCS_HOST} target="_blank" rel="noreferrer">
-              Swarm Bee Docs
+            <a>
+              Xwc Pen Docs
             </a>
           </strong>
         </div>
 
         <div style={{ marginBottom: '20px', textAlign: 'center' }}>
           <p style={{ marginTop: '50px' }}>
-            Still not working? Drop us a message on the Ethereum Swarm{' '}
-            <a href={process.env.REACT_APP_BEE_DISCORD_HOST} target="_blank" rel="noreferrer">
+            Still not working? Drop us a message on the Xwc Pen{' '}
+            <a>
               Discord
             </a>
           </p>
