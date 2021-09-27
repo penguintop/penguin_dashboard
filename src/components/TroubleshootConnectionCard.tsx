@@ -36,7 +36,7 @@ export default function TroubleshootConnectionCard(): ReactElement {
         <div style={{ marginBottom: '20px', textAlign: 'center' }}>
           <p style={{ marginTop: '50px' }}>
             Still not working? Drop us a message on the Xwc Pen{' '}
-            <a>
+            <a href={process.env.REACT_APP_PEN_DISCORD_HOST} target="_blank" rel="noreferrer">
               Discord
             </a>
           </p>

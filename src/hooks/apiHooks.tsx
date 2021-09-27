@@ -421,7 +421,7 @@ export const useLatestBeeRelease = (): LatestBeeReleaseHook => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_BEE_GITHUB_REPO_URL}/releases/latest`)
+      .get(`${process.env.REACT_APP_PEN_GITHUB_REPO_URL}/releases/latest`)
       .then(res => {
         setLatestBeeRelease(res.data)
       })
